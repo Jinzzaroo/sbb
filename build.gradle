@@ -5,7 +5,7 @@ plugins {
 }
 
 group = 'com.mygroup'
-version = '1.0.4'
+version = '1.0.8'
 
 java {
 	sourceCompatibility = '17'
@@ -36,6 +36,7 @@ dependencies {
 	implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity6:3.1.1.RELEASE'
 	implementation 'org.commonmark:commonmark:0.21.0'
 	runtimeOnly group: 'com.mysql', name: 'mysql-connector-j', version: '8.0.33'
+	runtimeOnly 'org.postgresql:postgresql'
 }
 
 tasks.named('test') {
